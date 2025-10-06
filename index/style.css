@@ -1,0 +1,300 @@
+/* GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+}
+
+main {
+    background-color: #002751; 
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #ff751f;
+    margin: 40px auto;
+    width: 50%;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+header img {
+    max-width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: aliceblue;
+    font-weight: 800;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+header nav ul li a:hover {
+    background-color: #ff751f;
+    border-radius: 5px;
+}
+
+/* PRINCIPAL */
+.contenedorPrincipal {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#cajaTexto {
+    max-width: 600px;
+    padding: 20px;
+}
+
+#cajaTexto h2 {
+    color: aliceblue;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#cajaTexto h2 span {
+    font-size: 1.5em;
+    color: #ff751f;
+}
+
+#cajaTexto p {
+    color: aliceblue;
+    font-size: 1.2em;
+}
+
+#cajaTexto a {
+    color: black;
+    text-decoration: none;
+    background-color: aliceblue;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 3em;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#cajaImagen img {
+    max-width: 260px;
+}
+
+/* CURSOS */
+#cursos {
+    background-color:aliceblue;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+#cursos h2 {
+    color: #002751;
+}
+
+#cursosCaja {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#cursosCaja article {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+#cursosCaja article h3 {
+    color: #002751;
+}
+
+#cursosCaja article p {
+    color: #002751;
+}
+
+#cursosCaja img {
+    width: 200px;
+    height: 150px;
+}
+
+/* INFORMACIÓN Y CONTACTO */
+.seccionInfo {
+    background: aliceblue;
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 90%;
+}
+
+.seccionInfo h2, .seccionInfo h3 {
+    color: #002751;
+}
+
+.seccionInfo p {
+    color: #002751;
+    text-align: center;
+}
+
+.seccionInfo ul {
+    list-style-type: none; 
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #333;
+    padding: 0;
+}
+
+
+/* TABLAS */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #002751;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #002751;
+    color: aliceblue;
+}
+
+/* FORMULARIO */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form fieldset {
+    border: 1px solid #002751;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+form legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #002751;
+    padding: 0 10px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #002751;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background-color: #ff751f;
+    color: aliceblue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form input[type="submit"]:hover {
+    background-color: orange;
+}
+
+/* FOOTER */
+footer {
+    background-color: #003366;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; 
+}
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .contenedorPrincipal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #cajaTexto h2 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    #cajaImagen {
+        margin-top: 30px;
+    }
+}

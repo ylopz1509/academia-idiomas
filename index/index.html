@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de idiomas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html">
+                <img src="images/Academia.png" alt="Logo">
+            </a>
+            <a href="index.html">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ingles.html">Inglés</a></li>
+                    <li><a href="frances.html">Francés</a></li>
+                    <li><a href="aleman.html">Alemán</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article class="contenedorPrincipal">
+            <section id="cajaTexto">
+                <h2>Abre tu mundo<br> <span>Habla un nuevo idioma</span></h2>
+                <p>En Global Lingua te conectamos con nuevas culturas a través de nuestros cursos de inglés, francés y alemán. ¡Empieza a aprender hoy!</p>
+                <br>
+                <a href="#cursos">Ver Cursos</a>
+            </section>
+        </article>
+
+        <section id="cursos"> 
+            <h2>Cursos</h2>
+            <div id="cursosCaja">
+                <article>
+                    <img src="images/ingles.png" alt="Curso de Inglés">
+                    <h3>Curso de Inglés</h3>
+                    <p>Domina el idioma universal.</p>
+                </article>
+                <article>
+                    <img src="images/frances.jpg" alt="Curso de Francés">
+                    <h3>Curso de Francés</h3>
+                    <p>Aprende el idioma del amor.</p>
+                </article>
+                <article>
+                    <img src="images/aleman.png" alt="Curso de Alemán">
+                    <h3>Curso de Alemán</h3>
+                    <p>Aprende Alemán y lográ tus metas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccionInfo">
+            <h2>Nuestras Sucursales</h2>
+            <p>Encuéntranos cerca de ti. Contamos con instalaciones modernas.</p>
+            <table border>
+                <tbody>
+                    <tr>
+                        <th>Sucursal</th>
+                        <th>Dirección</th>
+                        <th>Horario</th>
+                    </tr>
+                    <tr>
+                        <td>Centro</td>
+                        <td>Blvd. Centro, León, Gto.</td>
+                        <td>L a S 8am - 8pm</td>
+                    </tr>
+                    <tr>
+                        <td>Norte</td>
+                        <td>Blvd. Campestre, León, Gto.</td>
+                        <td>L a S 9am - 8pm</td>
+                    </tr>
+                     <tr>
+                        <td>Sur</td>
+                        <td>Blvd. Aeropuerto, León, Gto.</td>
+                        <td> L a S 9am - 8pm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <hr>
+
+       <section id="contacto" class="seccionInfo">
+    <h2>Inscríbete o solicita Informes</h2>
+    <p>Para registrarte en un curso o resolver cualquier duda, por favor compártenos tus datos.</p>
+    
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            
+            <label for="curso">Curso de interés:</label>
+            <select id="curso" name="curso">
+                <option value="">-- Elige un curso --</option>
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="aleman">Alemán</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios o Preguntas</legend>
+            <label for="mensaje">Este apartado puede usted añadir cualquier comentario, sugerencia o duda.</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Enviar Registro">
+    </form>
+</section>
+    </main>
+    <footer>
+        <p>Teléfono: 477 519 8692 | Correo: contacto@idiomas.com</p>
+        <p>&copy; 2025 Global Lingua.</p>
+    </footer>
+</body>
+</html>
